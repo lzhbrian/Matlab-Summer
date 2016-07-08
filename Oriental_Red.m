@@ -16,15 +16,9 @@ function Oriental_Red
     % Generate Sin Signal
     y = [];
     for i = 1:length(tone)
-        y = [y, generate_sin(tone(i),len(i), sample_rate)];
+        t = linspace(0,len(i),len(i)*sample_rate);
+        y = [y, sin(2 * pi * tone(i) * t )];
     end
     % Make sound
     sound(y, sample_rate);
 end
-
-% Generate Sin Signal
-function y = generate_sin(f, len, sample_rate)
-    t = linspace(0,len,len*sample_rate);
-    y = sin(2*pi*f*( t ));
-end
-
