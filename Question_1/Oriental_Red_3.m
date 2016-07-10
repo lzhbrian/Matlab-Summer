@@ -30,8 +30,8 @@ function Oriental_Red_3
     y = y .* volume_array;
     
     % up for a half degree %%%%%%%
-%     [p,q] = rat(2^(1/12),0.00000001);
-%     y = resample(y,q,p);
+    [p,q] = rat(2^(1/12),0.00000001);
+    y = resample(y,q,p);
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
     % Make sound
