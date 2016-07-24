@@ -2,7 +2,7 @@
 * Work by **_Lin, Tzu-Heng_**, Dept. of Electronic Engineering, Tsinghua University
     * **清华大学 电子工程系 无42 林子恒 2014011054**
     * Email: _**lzhbrian@gmail.com**_ / _**linzh14@mails.tsinghua.edu.cn**_
-* See My Github [Repository of This Project](https://github.com/lzhbrian/Matlab-Summer)
+* See My Github [Repository of This Project](https://github.com/lzhbrian/Matlab-Summer/blob/master/report.md)
 
 ### 目录 Content:
 
