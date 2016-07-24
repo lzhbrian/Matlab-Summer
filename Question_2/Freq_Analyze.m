@@ -15,7 +15,7 @@ function [base, one_amp,two_amp,three_amp,four_amp ,tone]=...
     close all;
     % x axis
     x = [ 0 : length(input_array)-1 ] / length(input_array)*8000;
-    
+    plot(x, abs(fft(input_array)));title('original');
     if(problem_index==8)
         figure;
         subplot(parameter,1,1);
@@ -92,15 +92,14 @@ function [base, one_amp,two_amp,three_amp,four_amp ,tone]=...
     [val, index] = max( freqtarget( four_amp_index ) );
     four_amp = freqtarget( four_amp_index(index) );
     
-    nan = 0;
     % Check if its empty(zero)
-    if isempty(two_amp) | two_amp/one_amp < nan
+    if isempty(two_amp)
         two_amp = 0; 
     end
-    if isempty(three_amp) | three_amp/one_amp < nan
+    if isempty(three_amp)
         three_amp = 0; 
     end
-    if isempty(four_amp) | four_amp/one_amp < nan
+    if isempty(four_amp)
         four_amp = 0; 
     end
     

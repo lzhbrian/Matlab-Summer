@@ -22,12 +22,12 @@ function preprocessed_array = preprocessing(input_array, cycle, standard)
     
     % Resampling
     % preprocessed_array = resample(units, length(input_array), 1);
-    preprocessed_array = resample(units, 1, 10)';
+    preprocessed_array = resample(units, 1, cycle)';
     
     % Plot
     figure; 
     subplot(3,1,1); plot(input_array); ylabel('realwave');
-    subplot(3,1,2); plot(standard); ylabel('wave2proc');
-    subplot(3,1,3); plot(preprocessed_array); ylabel('My wave2proc');
+    subplot(3,1,3); plot(standard); ylabel('wave2proc');
+    subplot(3,1,2); plot(preprocessed_array); ylabel('My wave2proc');
     
 end
